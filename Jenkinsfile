@@ -8,8 +8,8 @@ pipeline {
 	// }
 	agent any
 	environment{
-		dockerHome= tool 'jenkinDocker'
-		mavenHome= tool 'jenkinMaven'
+		dockerHome= tool 'MavenDocker'
+		mavenHome= tool 'JenkinMaven'
 		PATH="$dockerHome/bin:$mavenHome/bin:$PATH"
 	}
 	stages {
