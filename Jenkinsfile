@@ -19,4 +19,15 @@ pipeline {
 			}
 		}
 	}
+	post {
+		always {
+			echo "FINSHED!!"
+		}
+		success {
+			echo "SUCCESS!!"
+		}
+		failure {
+			echo "FAILURE!!"
+		}
+	}
 }
